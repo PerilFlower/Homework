@@ -1,0 +1,53 @@
+background-color: antiquewhite;
+}
+
+body {
+  text-align: center;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+img {
+  height: 100%;
+}
+
+div {
+  border: 3px double burlywood;
+  margin: 15px;
+
+}
+
+#introPic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:550px;
+  height:500px;
+}
+
+#bio {
+  display: flex;
+flex-direction: column;
+justify-content:space-between;
+align-items: center;
+}
+#bio > li {
+padding:10px
+}
+
+#pro {
+  width: auto;
+}
+@media (max-width:375px)
+(max-height:675px)
+(orientation :portrait) {}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
