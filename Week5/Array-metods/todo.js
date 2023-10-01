@@ -302,3 +302,9 @@
     completed: true
   }
 ];
+
+const user3tasks = data.filter(todo => todo.userId === 6);
+console.log(user3tasks);
+
+const user3incompletetasks = data.filter`(task => task.completed.userId === false)`;
+console.log(user3incompletetasks);
