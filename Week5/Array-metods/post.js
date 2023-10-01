@@ -355,3 +355,8 @@
       "error suscipit maxime adipisci consequuntur recusandae\nvoluptas eligendi et est et voluptates\nquia distinctio ab amet quaerat molestiae et vitae\nadipisci impedit sequi nesciunt quis consectetur"
   }
 ];
+const user5posts = data.filter(post => post.userId === 6);
+console.log(user5posts);
+
+const title = data.map(user => ${user.title.body}${user.id.body});
+console.log(title);

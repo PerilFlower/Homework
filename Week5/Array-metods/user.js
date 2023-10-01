@@ -230,3 +230,8 @@
     }
   }
 ];
+const phoneNumbers = data.map(user =>(retun user.id.number;});
+console.log(phoneNumbers);
+
+const contact = data.map(user => `${user.website.email}${user.company.bs}`);
+console.log(contact);
