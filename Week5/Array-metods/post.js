@@ -1,3 +1,4 @@
+const data =
 [
   {
     userId: 1,
@@ -355,8 +356,8 @@
       "error suscipit maxime adipisci consequuntur recusandae\nvoluptas eligendi et est et voluptates\nquia distinctio ab amet quaerat molestiae et vitae\nadipisci impedit sequi nesciunt quis consectetur"
   }
 ];
-const user5posts = data.filter(post => post.userId === 6);
+const user5posts = data.filter(post => post.userId === 5);
 console.log(user5posts);
 
-const title = data.map(user => ${user.title.body}${user.id.body});
+const title = data.map(post => `${post.title} ${post.id}`);
 console.log(title);

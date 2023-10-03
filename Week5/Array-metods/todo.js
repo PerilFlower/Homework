@@ -1,3 +1,4 @@
+const data = 
 [
   {
     userId: 1,
@@ -303,8 +304,8 @@
   }
 ];
 
-const user3tasks = data.filter(todo => todo.userId === 6);
+const user3tasks = data.filter(todo => todo.userId === 3);
 console.log(user3tasks);
 
-const user3incompletetasks = data.filter`(task => task.completed.userId === false)`;
+const user3incompletetasks = data.filter`(task => task.userId === 3 && !task.completed);  )`;
 console.log(user3incompletetasks);

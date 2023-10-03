@@ -1,3 +1,4 @@
+const data = 
 [
   {
     id: 1,
@@ -230,8 +231,8 @@
     }
   }
 ];
-const phoneNumbers = data.map(user =>(retun user.id.number;});
+const phoneNumbers = data.map(user => user.phone);
 console.log(phoneNumbers);
 
-const contact = data.map(user => `${user.website.email}${user.company.bs}`);
+const contact = data.map(user => `${user.email}${user.company.bs}`);
 console.log(contact);
