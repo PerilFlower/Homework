@@ -47,21 +47,13 @@ let cookedPizza = preparePizza(customerOrder);
 //outputs a pizza Object with appropriate key-value pairs for size, crust, and toppings
 //Create a servePizza function that
 //has a parameter of a pizza Object
-function servePizza(pizza){
-  let orderReady =  `Order up! Here's your ${pizza.size}
-  ${pizza.crust} crust pizza with`;
-  if (pizza.toppings.length === 0) {
-    serveStr += "cheese";
-} else {
-    for (let i = 0; i < pizza.toppings.length; i++) {
-        serveStr += pizza.toppings[i];
-        if (i === pizza.toppings.length - 2) {
-            serveStr += ", and ";
-        } else if (i !== pizza.toppings.length - 1) {
-            serveStr += ", ";
-        }
-    }
-serveStr += "...enjoy!";
-console.log(serveStr);
-return pizza;
+function servePizza(pizza) {
+  let orderReady = `Order up! Here's your ${pizza.size} ${pizza.crust} crust pizza with `;
+  for (let topping of pizza.toppings) {
+      orderReady += `${topping}, `;
+  }
+  console.log(`${orderReady}. Enjoy!`);
+  return pizza;
 }
+
+servePizza(cookedPizza);
